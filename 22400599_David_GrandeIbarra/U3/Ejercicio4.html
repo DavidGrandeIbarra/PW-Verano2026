@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio4</title>
+        <style>
+            
+
+            h1{
+                color:blue;
+                font-size: 50px;
+            }
+
+            body{
+                background: #dadae3;
+            }
+
+            input,a,hr{
+                margin-bottom:15px;
+                margin-top: 5px;
+            }
+
+            fieldset{
+                border-radius: 15px;
+                width:500px;
+                height: 300px;
+                background: white;
+                text-align: center;
+            }
+            
+            input{
+                width:480px;
+                height: 40px;
+                border-radius: 4px;
+                border: 1px solid rgba(0,0,0, 0.2);
+            }
+
+            .btnIni{
+                background: #0866ff;
+                color:white;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .btnCrear{
+                background: #42b72a;
+                color:white;
+                font-weight: bold;
+                width:200px;
+                font-size: 20px
+            }
+
+            a{
+                text-decoration: none;
+                color:blue;
+                font-weight: bold;
+                font-size:15px;
+            }
+
+            a:hover{
+                text-decoration: underline;
+                color:lightblue;
+                cursor: pointer;
+            }
+
+            
+
+            .contenedor-padre{
+                display:flex;
+                width:100%;
+                height: 100%;
+                justify-content: space-around;
+                font-family: Arial, Helvetica, sans-serif;
+                background: #dadae3;
+                
+
+            }
+
+            .caja1{
+                flex:1;
+                background: #dadae3;
+                width:400px;
+                margin-top: 150px;
+                margin-left: 150px;
+                
+            }
+            .caja2{
+                flex:1;
+                margin-top: 150px;
+            }
+
+            @media (max-width:768px){
+
+    .contenedor-padre{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .caja1,
+    .caja2{
+        width:100%;
+        margin:0;
+        padding:20px;
+    }
+
+    h1{
+        font-size:40px;
+    }
+
+    p{
+        font-size:18px;
+    }
+
+    fieldset{
+        max-width:100%;
+    }
+
+    .btnCrear{
+        width:100%;
+    }
+
+}
+
+
+
+            
+        </style>
+    
+    </head>
+    <body>
+        <div class="contenedor-padre">
+            <div class="caja1">
+        <h1>facebook</h1>
+        <p><strong>Facebook te ayuda a comunicarte y <br>
+            compartir con las personas que forman<br> 
+            parte de tu vida.</strong>
+        </p>
+        </div>
+
+        <form class="caja2">
+            <fieldset>
+                <input class="intro" type="text" placeholder="Correo electronico o numero de telefono">
+                <br>
+                <input class="intro" type="password" placeholder="Contraseña">
+                <br>
+                <input class="btnIni" type="submit" value="Iniciar Sesion">
+                <br>
+                <a>¿Olvidaste tu contraseña?</a>
+                <hr>
+                <input class="btnCrear" type="submit" value="Crear cuenta nueva">
+            </fieldset>
+            <footer >
+            <p><strong>Crea una pagina</strong> para una celebridad, una marca o un <br>
+                negocio.
+            </p>
+            </footer>
+        </form>
+
+
+        </div>
+    </body>
+</html>
