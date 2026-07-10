@@ -1,0 +1,102 @@
+
+.contenedor{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr; 
+    grid-template-areas: 
+        "nav"
+        "main"
+        "busqueda"
+        ;
+    text-align: center;
+    
+    background:black
+}
+
+/*CONTENEDOR NAV CON LOS BOTONES DE OPCIONES*/
+.caja1{
+    display:grid;
+    background: yellow;
+    grid-area: nav;
+    grid-template-columns: 4.2fr 1fr 1fr 1fr;
+    grid-template-areas: " blanks gmail imagenes acceder";
+    border-radius: 5px;
+    text-align: center;
+    grid-gap: 5px;
+    height: 40px;
+}
+
+#btnGmail{
+    background: yellowgreen;
+    grid-area: gmail;
+  
+}
+#btnImagenes{
+    background: violet;
+    grid-area: imagenes;
+}
+
+#btnAcceder{
+    background: seagreen;
+    grid-area: acceder;   
+}
+
+/*CONTENEDOR DE LA PALABRA GOOGLE*/
+.google{
+    display: grid;
+    grid-area:main;
+    grid-template-columns: 3fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 3fr;
+    grid-template-areas: "bl1 g1 o1 o2 g2 l e bl";
+    background: white;
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#letrag{
+    grid-area: g1;
+    color:#4285f4;
+}
+
+#letrao{
+    grid-area: o1;
+    color:#ea4335;
+}
+#letrao2{
+    grid-area: o2;
+    color:#fbbc05;
+}
+#letrag2{
+    grid-area: g2;
+    color:#4285f4;
+}
+#letral{
+    grid-area: l;
+    color:#34a853;
+}
+#letrae{
+    grid-area: e;
+    color:#ea4335;
+}
+
+.barrabusqueda{
+    display: grid;
+    grid-area: busqueda;
+    background:white;
+    
+    grid-template-columns: 1fr;
+    grid-template-areas: "busca";   
+    align-items: center;
+}
+
+#bbusqueda{
+    grid-area:busca;
+}
+
+#inb{
+    width:800px;
+    height: 30px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,0.5);
+}

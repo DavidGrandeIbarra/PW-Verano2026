@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio6</title>
+    <style>
+        .contenedor{
+            display:grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            grid-template-areas: 
+                "logo info"
+                ;
+            height: 100vh;
+            background:turquoise;
+            text-align: center;
+            font-family: "Segoe UI", Arial, sans-serif;
+               
+        }
+
+        .barralateral1{
+            grid-area: logo;
+            background:black;
+            text-align: center;
+        }
+
+        .barralateral2{
+            grid-area:info;
+            background:black;
+            display: grid;
+            grid-template-rows: 0.8fr 1fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 2fr;
+            grid-template-areas:
+                "blnk"
+                "msj1"
+                "msj2"
+                "btn1"
+                "btn2"
+                "entrada1"
+                "aviso1"
+                "avisos2"
+                "entrada2"
+                "blnk2"
+
+            ;
+            grid-gap: 5px;
+        }
+
+        #msj1{
+            grid-area:msj1;
+            color: white;
+            text-align: left;
+        }
+
+        #msj2{
+            grid-area:msj2;
+            color:white;
+            text-align: left;
+        }
+
+        #btngoogle{
+            grid-area:btn1 ;
+            color:black;
+            border:1px solid rgba(0,0,0,0.2);
+            border-radius: 10px;
+            background: white;
+            
+        }
+        #btnapple{
+            grid-area: btn2;
+            color:black;
+            border:1px solid rgba(0,0,0,0.2);
+            border-radius: 10px;
+            background: white;
+            text-align: center;
+        }
+
+        #input1{
+            grid-area: entrada1;
+            color:white;
+            background: blue;
+            border-radius: 10px;
+            border:1px solid rgba(0,0,0,0.2)
+        }
+
+        #aviso{
+            grid-area: aviso1;
+            text-align: left;
+            color: white;
+
+        }
+
+        #input2{
+            grid-area:entrada2;
+            background: black;
+            color:aqua;
+            border-radius: 10px;
+            border:3px solid rgba(0,255,255,0.2)
+
+        }
+
+        #aviso2{
+            grid-area: avisos2;
+            text-align: left;
+            color:white;
+
+        }
+        
+        #logox{
+            text-align: center;
+            margin-top: 130px;
+        }
+
+       
+        @media (max-width:750px){
+            .contenedor{
+                grid-template-columns: 1fr;
+                grid-template-rows:0.3fr 1.7fr;
+                grid-template-areas: "logo" "info";
+            }
+            
+            #logox{
+                width:200px;
+            }
+        }
+
+
+    </style>
+    <body>
+        <div class="contenedor">
+            <div class="barralateral1">
+                <img width="400px" id="logox" src="https://cdn.prod.website-files.com/5d66bdc65e51a0d114d15891/64cebdd90aef8ef8c749e848_X-EverythingApp-Logo-Twitter.jpg">
+            </div>
+            <div class="barralateral2">
+                <h1 id="msj1">
+                    Lo que esta <br> 
+                    pasando ahora 
+                </h1>
+                
+                <h5 id="msj2">Unete hoy</h5>
+                
+                <label id="btngoogle">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg">
+                     Registrarse con Google
+                </label>
+
+                <label id="btnapple">
+                    <img width="20px" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg">
+                     Registrarse con Apple
+                </label>
+
+                
+                <input id="input1" type="submit" value="Crear cuenta">
+                <p id="aviso">Al registrarte, aceptas los Terminos de servicio y la <br>
+                    Politica de privacidad, incluida la politica de uso de Cookies.
+
+                </p>
+
+                <h2 id="aviso2">¿Ya tienes una cuenta?</h2>
+                <input id="input2" type="submit" value="Iniciar sesion">
+            </div>
+            
+        </div>
+    </body>
+</html>
