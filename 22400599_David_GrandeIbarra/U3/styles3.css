@@ -1,0 +1,265 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+
+
+
+.seccion1{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "encabezado"
+    "logo"
+    "series"
+    "email"
+    "aviso"
+    "pie";
+    height: 65vh;
+    width: 100%;
+    background: #333 url("main-hero-background.png") no-repeat center / cover;
+    background-size: cover;
+}
+
+.caja1{
+    grid-area: encabezado;
+    display: flex;
+    justify-content: right;
+}
+
+.caja1{
+    position: relative;
+}
+
+
+.btn1{
+    width:200px;
+    height: 40px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+.caja1 label{
+    position:absolute;
+    top:30%;
+    left:93%;
+    -webkit-transform: translate(-50%,-50%);
+    font-size: 10px;
+    color:white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.caja2{
+    grid-area: logo;
+}
+
+.caja2 img{
+    width:100px;
+}
+
+
+.caja3{
+    grid-area: series;
+}
+
+.caja3 p{
+    font-size: 28px;
+    color:white;
+    font-weight: bold;
+}
+
+.caja4{
+    grid-area: email;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas: "email suscrib";    
+}
+
+.subcaja1{
+    grid-area: email;
+}
+
+.subcaja2{
+    grid-area: suscrib;
+}
+
+.caja4, .entradaemail{
+    width:300px;
+    height: 30px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 10px 0px  0px 10px;
+    border:none;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.05);
+    outline: none;
+    transition: .3s;
+}
+
+
+.subcaja2{
+    position: relative;
+}
+
+
+.btn2{
+    width:250px;
+    height: 30px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 0px 10px  10px 0px;
+    cursor: pointer;
+    background: turquoise;   
+}
+
+
+.subcaja2 label{
+    position: absolute;
+    top:45%;
+    left: 40%;
+    -webkit-transform: translate(-50%,-50%);
+    cursor: pointer;
+    font-size: 13px;
+    color:black;
+}
+
+
+
+
+
+
+.caja5{
+    grid-area: aviso;
+}
+
+.caja5 p{
+    color:white;
+    font-size: 15px;
+}
+
+
+.caja6{
+    grid-area: pie;
+}
+
+.caja6 img{
+    width:45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.seccion2{
+    display: grid;
+    height: 200vh;
+    width: 100%;
+    
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+
+    grid-template-areas: "c1 c2 c3";
+    background: black;
+}
+
+.subcaja3{
+    grid-area: c2;
+    display: grid;
+    grid-template-rows: 0.1fr 1.9fr;
+    grid-template-areas: 
+    "r1" 
+    "r2";
+}
+
+.subcaja4{
+    grid-area:r1;
+    background: black;
+}
+
+.subcaja4 h1{
+    font-size: 40px;
+    color:white;
+}
+
+.subcaja4 p{
+    font-size: 20px;
+    color:white;
+}
+
+.subcaja5{
+    grid-area:r2 ;
+    background: #333 url("starwars.png") no-repeat center / cover;
+    background-size: cover;
+    
+}
+
+.subcaja5 h1{
+    font-size: 50px;
+    font-weight: bold;
+    color:white;
+    margin-top: 500px;
+}
+
+
+.seccion3{
+    background: rgb(10, 78, 172);
+    display: grid;
+    height: 50vh;
+    width: 100%;
+}
+
+.seccion4{
+    
+    background: rgb(7, 185, 27);
+    display: grid;
+    height: 100vh;
+    width: 100%;
+}
+.seccion5{
+    background: rgb(248, 28, 16);
+    display: grid;
+    height: 80vh;
+    width: 100%;
+}
+.seccion6{
+    background: rgb(100, 192, 250);
+    display: grid;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+
+.seccion7{
+
+    background: black;
+    display: grid;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+}
+
+.seccion7 h1{
+    color:white;
+    font-size: 15px;
+    margin-top:20px ;
+}
+
+
